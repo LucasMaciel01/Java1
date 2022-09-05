@@ -2,6 +2,56 @@ let totalCompra = 0
 let productoSeleccionado = parseInt(prompt("ingresa el numero del producto que quieras comprar: 1- Manzana 2-Banana 3-Pera"))
 let seguirComprando = true
 let decision
+let productos = []
+// class Producto {
+//    constructor(nombre, precio, stock) {
+//        this.nombre = nombre
+//        this.precio = precio
+//        this.stock = stock
+//    }
+//
+//    modificarStock(){
+//        this.stock = this.stock - 1
+//    }
+//}
+//const Manzana = new Producto("manzana, 200,5")
+//Manzana.modificarStock()
+//Manzana.modificarStock()
+//Manzana.modificarStock() 
+
+const Manzana = {
+    nombre: "Manzana",
+    precio: 200, 
+}
+productos.push(Manzana)
+const Banana = {
+    nombre: "Banana",
+    precio: 150,
+}
+productos.push(Banana)
+const Pera = {
+    nombre: "Pera",
+    precio: 300,
+}
+productos.push(Pera)
+
+console.log(productos)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 while(seguirComprando===true){
     if(productoSeleccionado=== 1){
         totalCompra = totalCompra + 200
