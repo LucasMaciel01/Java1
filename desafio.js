@@ -1,5 +1,5 @@
 let totalCompra = 0
-let productoSeleccionado = parseInt(prompt("ingresa el numero del producto que quieras comprar: 1- Manzana 2-Banana 3-Pera"))
+let productoSeleccionado = parseInt(prompt("ingresa el numero del producto que quieras comprar: 1- Brownie 2-Carrot Cake 3-Torta Hojaldre 4-Croissant 5-Scones 6-Pan"))
 let seguirComprando = true
 let decision
 let productos = []
@@ -81,13 +81,13 @@ while(seguirComprando===true){
     } else if(productoSeleccionado=== 6){
         totalCompra = totalCompra + 400
     } else{
-        productoSeleccionado = parseInt(prompt("Ingrese un producto existente: 1- Manzana 2-Banana 3-Pera"))
+        productoSeleccionado = parseInt(prompt("ingresa el numero del producto que quieras comprar: 1- Brownie 2-Carrot Cake 3-Torta Hojaldre 4-Croissant 5-Scones 6-Pan"))
         continue
     }
 
     decision = parseInt(prompt("Quieres seguir agregando productos? 1- Si 2-No"))
     if(decision=== 1){
-        productoSeleccionado = parseInt(prompt("ingresa el numero del producto que quieras comprar: 1- Manzana 2-Banana 3-Pera"))
+        productoSeleccionado = parseInt(prompt("ingresa el numero del producto que quieras comprar: 1- Brownie 2-Carrot Cake 3-Torta Hojaldre 4-Croissant 5-Scones 6-Pan"))
     } else if(decision=== 2){
         seguirComprando = false
     }
