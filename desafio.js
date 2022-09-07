@@ -19,21 +19,36 @@ let productos = []
 //Manzana.modificarStock()
 //Manzana.modificarStock() 
 
-const Manzana = {
-    nombre: "Manzana",
-    precio: 200, 
+const Brownie = {
+    nombre: "Brownie",
+    precio: 900, 
 }
-productos.push(Manzana)
-const Banana = {
-    nombre: "Banana",
-    precio: 150,
+productos.push(Brownie)
+const Carrot = {
+    nombre: "Carrot-Cake",
+    precio: 1500,
 }
-productos.push(Banana)
-const Pera = {
-    nombre: "Pera",
-    precio: 300,
+productos.push(Carrot)
+const Torta = {
+    nombre: "Torta-Hojaldre",
+    precio: 1200,
 }
-productos.push(Pera)
+productos.push(Torta)
+const Croissant = {
+    nombre: "Croissant",
+    precio: 100, 
+}
+productos.push(Croissant)
+const Scones = {
+    nombre: "Scones",
+    precio: 100, 
+}
+productos.push(Scones)
+const Pan = {
+    nombre: "Pan-Casero",
+    precio: 400, 
+}
+productos.push(Pan)
 
 console.log(productos)
 
@@ -54,11 +69,17 @@ console.log(productos)
 
 while(seguirComprando===true){
     if(productoSeleccionado=== 1){
-        totalCompra = totalCompra + 200
+        totalCompra = totalCompra + 900
     } else if(productoSeleccionado=== 2){
-        totalCompra = totalCompra + 150
+        totalCompra = totalCompra + 1500
     } else if(productoSeleccionado=== 3){
-        totalCompra = totalCompra + 300
+        totalCompra = totalCompra + 1200
+    } else if(productoSeleccionado=== 4){
+        totalCompra = totalCompra + 100
+    } else if(productoSeleccionado=== 5){
+        totalCompra = totalCompra + 100
+    } else if(productoSeleccionado=== 6){
+        totalCompra = totalCompra + 400
     } else{
         productoSeleccionado = parseInt(prompt("Ingrese un producto existente: 1- Manzana 2-Banana 3-Pera"))
         continue
